@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="background-container">
+      <section class="bg-section bg-classroom">
+        <header>
+          <nav>
+            <div class="headerWrap">
+              <img src="../assets/images/Icons/logo.png" alt="Logo" style="margin-right: 15px; margin-left: 15px;">
+              <div class="headerTitle">InterSpeak English school</div>
+            </div>
+            <div class="headerButtonRow">
+              <button class="headerBtn">Отзывы</button>
+              <button class="headerBtn" onclick="location.href='catalog.html'">Программы</button>
+              <button class="headerBtn">Вопросы</button>
+              <button class="headerBtn">О нас</button>
+            </div>
+            <button class="headerBtn" style="margin-right: 2vh;" id="mainPageRegBtn">Регистрация/вход</button>
+            
+          </nav>
+        </header>
+        
+        <main>
+          <!-- Main Information -->
+          <section class="infoBlock">
+            <div class="infoText">
+              <h1 class="infoTextTitle">Онлайн Школа английского языка InterSpeak</h1>
+              <h2 class="infoTextContent">Заговорите уверенно на английском языке уже через 2 месяца регулярных занятий по нашей авторской методике.</h2>
+              <button class="infoBlockButton">Записаться на курс</button>
+            </div>
+            <img src="../assets/images/hero/heroBook.png" alt="heroBook">
+          </section>
+          <!-- Statistics -->
+          <section class="statisticsBlock">
+            <div class="concurrentUsers">
+              <img src="../assets/images/Icons/communityIcon.png" alt="users">
+              <p>5482 Активных пользователей</p>
+            </div>
+            <div class="totalRating">
+            <img src="../assets/images/Icons/ratingIcon.png" alt="rating">
+            <p>80% положительных отзывов</p>
+            </div>
+          </section>
+          <!-- Level cards -->
+          <section class="cardsList">
+            <div class="levelCard">
+              <h2 class="cardTitle">Основы изучения английского: с нуля до A1</h2>
+              <img src="../assets/images/hero/A1levelHero.png" alt="level A1">
+              <p class="cardText">Заложите прочный фундамент для изучения языка. Освойте базовые правила грамматики, и сформируйте первый словарный запас.</p>
+              <button class="cardButton">Изучи основы!</button>
+            </div>
+            <div class="levelCard">
+              <h2 class="cardTitle">Разговорный английский: с нуля до B1</h2>
+              <img src="../assets/images/hero/B1levelHero.png" alt="level B1">
+              <p class="cardText">Преодолейте языковой барьер и начните уверенно общаться. Расширьте словарный запас и понимайте носителей на слух.</p>
+              <button class="cardButton">Понимай больше!</button>
+            </div>
+            <div class="levelCard">
+              <h2 class="cardTitle">Свободное владение языком: с нуля до C2</h2>
+              <img src="../assets/images/hero/C1levelHero.png" alt="level C1">
+              <p class="cardText">Достигните свободы в общении на любые темы. подготовьтесь к интеграции в англоязычную среду.</p>
+              <button class="cardButton">Говори свободно!</button>
+            </div>
+          </section>
+          <!-- misc cards -->
+          <section class="bg-section bg-books">
+            <section class="bottomCards">
+              <div class="bottomCard">
+                <h2 class="cardTitle" style="grid-column: span 2;">Не знаете где начать?</h2>
+                <img src="../assets/images/hero/testHero.png" alt="test" class="bottomCardContent CardImage">
+                <p class="cardText" style="grid-column: 2;">Постройте основу для будущего развития в сфере иностранного языка. Основные выражения, слова, конструкции.</p>
+                <button class="cardButton bottomCardButton">Пройти тест</button>
+              </div>
+              <div class="bottomCard">
+                <h2 class="cardTitle" style="grid-column: span 2; justify-self: center;">Есть вопросы?</h2>
+                <img src="../assets/images/hero/questionmark.jpg" alt="level A1" class="bottomCardContent bottomCardImage">
+                <p class="cardText">Свяжитесь с нами — мы поможем подобрать подходящий уровень обучения, расскажем про формат занятий и ответим на любые вопросы.</p>
+                <button class="cardButton bottomCardButton" style="grid-row: 3;">Задать вопрос</button>
+              </div>
+            </section>
+        </section>
+        </main>
+      
+    </div>
+    <footer>
+      <div class="footer-container">
+    <div class="footer-col">
+      <div class="footer-logo">
+        <img src="../assets/images/Icons/logo.png" alt="logo">
+      </div>
+      <p class="footer-text">Современные образовательные программы и курсы для вашего развития.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <ul class="footer-links">
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">Программы</a></li>
+        <li><a href="#">Вопросы</a></li>
+        <li><a href="#">Связаться</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <p class="footer-text">Email: info@example.com</p>
+      <p class="footer-text">Телефон: +7 (999) 000-00-00</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Все права защищены.</p>
+  </div>
+    </footer>
+    <!-- Authorization/registration Popup -->
+     <section class="popup visibleFalse" id="regPopup">
+      <div class="popupShadow">
+      <section class="popupAuthReg">
+        <button class="popupCloseButton" id="registrationCloseBtn">Закрыть</button>
+        <div class="authRegSelection">
+          <button class="authRegSelectionButton" id="registrationSwitchBtn" disabled >Регистрация</button>
+          <button class="authRegSelectionButton" id="authorizationSwitchBtn">Вход</button>
+        </div>
+        <div class="signSelection">
+          <!-- Regisration block -->
+          <form action="" class="registrationForm" id="registrationFormBlock">
+            <div class="regFormSect" id="registrationNameFormField">
+              <label for="registrationNameFormField" class="formFieldLabel">Имя</label>
+              <input type="text" class="formField">
+              <label for="registrationNameFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSect" id="registrationEmailFormField">
+              <label for="registrationEmailFormField" class="formFieldLabel">Email</label>
+              <input type="text" class="formField">
+              <label for="registrationEmailFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSect" id="registrationPasswordFormField">
+              <label for="registrationPasswordFormField" class="formFieldLabel">Пароль</label>
+              <input type="text" class="formField">
+              <label for="registrationPasswordFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSect" id="registrationConfPassFormField">
+              <label for="registrationConfPassFormField" class="formFieldLabel">Подтвердите пароль</label>
+              <input type="text" class="formField">
+              <label for="registrationConfPassFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSectHorizontal">
+              <div class="regFormSect">
+                <label for="formBirthDateField" class="formFieldLabel">fsf</label>
+                <input type="date" id="formBirthDateField" style="width: 140px; height: 30px; background: #F5FFF7;">
+              </div>
+
+              <div id="formGenderSelect" class="regFormSect">
+                <label for="genderSelectFields" class="formFieldLabel">ваш пол</label>
+                <div style="display: flex;" di="genderSelectFields">
+                  <button class="genderSelectButton">
+                    <img src="../assets/images/Icons/maleIcon.png" alt="maleIcon">
+                  </button>
+                  <button class="genderSelectButton">
+                    <img src="../assets/images/Icons/femIcon.png" alt="femaleIcon">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="regFormSectHorizontal">
+                <div style="display: flex; flex-direction: column;">
+                  <label for="regLevelSelect" id="regLevelLable" style="color: #1D9200;">Ваш уровень:</label>
+                  <label for="regLevelLable" id="regLevelTip" class="regLowerText">
+                    <link rel="stylesheet" href="">Не знаете ваш уровень?
+                </label>
+              </div>
+              <select id="regLevelSelect" class="levelSelection">
+                  <option value="0"></option>
+                  <option value="">A1</option>
+                  <option value="">A2</option>
+                  <option value="">B1</option>
+                  <option value="">B2</option>
+                  <option value="">C1</option>
+                  <option value="">C2</option>
+              </select>
+            </div>
+            <div id="formAgreementBlock">
+              <div class="formAgreementWrap">
+                <input type="checkbox" class="formAgreement"><span class="formAgreementText">ознакомлен с пользовательским соглашением</span>
+              </div>
+              <div class="formAgreementWrap">
+                <input type="checkbox" class="formAgreement"><span class="formAgreementText">Соглашение</span>
+              </div>
+            </div>
+            <button class="authRegButton">Зарегистрироваться</button>
+            <link rel="stylesheet" href=""><span class="regLowerText">Уже есть аккаунт?</span>
+          </form>
+          <!-- Authorization block -->
+          <form action="" class="registrationForm visibleFalse" id="authorizationFormBlock">
+            <div style="margin-top: 100px;">
+             <div class="regFormSect">
+              <label for="registrationNameFormField" class="formFieldLabel">Логин</label>
+              <input type="text" class="formField" id="registrationNameFormField">
+              <label for="registrationNameFormField" class="formFieldError">имя уже используется</label>
+            </div>
+            <div class="regFormSect">
+              <label for="registrationPassFormField" class="formFieldLabel">Пароль</label>
+              <input type="text" class="formField" id="registrationPassFormField">
+              <label for="registrationPassFormField" class="formFieldError">err</label>
+            </div>
+            </div>
+            <button class="authRegButton" style="margin-top: 100px ;">Войти</button>
+          </form>
+        </div>
+      </section>
+      </div>
+     </section>
+  </body>
+  <script src="../assets/js/main.js"></script>
+</html>

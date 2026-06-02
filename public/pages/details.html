@@ -1,0 +1,288 @@
+<!-- card-detail.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Курс — InterSpeak</title>
+</head>
+<body>
+    <div class="background-container">
+        <section class="bg-section bg-classroom" style="min-height: 100vh; height: auto;">
+            <header>
+                <nav>
+                    <div style="display: flex; align-items: center; margin-top: 10px;">
+                        <img src="../assets/images/Icons/logo.png" alt="Logo" style="margin-right: 15px; margin-left: 15px;">
+                        <div class="headerTitle">InterSpeak English school</div>
+                    </div>
+                    <div class="headerButtonRow">
+                        <button class="headerBtn">Отзывы</button>
+                        <button class="headerBtn" onclick="location.href='catalog.html'">Программы</button>
+                        <button class="headerBtn">Вопросы</button>
+                        <button class="headerBtn">О нас</button>
+                    </div>
+                    <button class="headerBtn" style="margin-right: 2vh;" id="mainPageRegBtn">Регистрация/вход</button>
+                </nav>
+            </header>
+
+            <main style="padding-top: 140px; padding-bottom: 60px; max-width: 1200px; margin: 0 auto;">
+                
+                <!-- Breadcrumb -->
+                <div style="font-family: 'Itim Cyrillic'; color: #1D9200; margin-bottom: 30px; font-size: 18px;">
+                    <a href="index.html" style="color: #1D9200; text-decoration: none;">Главная</a> / 
+                    <a href="catalog.html" style="color: #1D9200; text-decoration: none;">Программы</a> / 
+                    <span style="color: #00D962;">Основы английского (A1)</span>
+                </div>
+
+                <!-- Course Hero -->
+                <div class="infoBlock" style="margin-top: 0; height: auto; min-height: 400px; display: block; padding: 40px;">
+                    <div style="display: flex; gap: 40px; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 300px;">
+                            <div style="width: 100%; height: 250px; background: linear-gradient(135deg, #E9FFF1, #98FFB3); border-radius: 40px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px;">
+                                <span style="font-family: 'Itim Cyrillic'; font-size: 100px; color: #1D9200;">A1</span>
+                            </div>
+                        </div>
+                        <div style="flex: 2; min-width: 300px;">
+                            <h1 style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 42px; margin: 0 0 20px 0;">Основы английского языка</h1>
+                            <p style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 20px; line-height: 1.6; margin-bottom: 30px;">
+                                Базовый курс для тех, кто только начинает изучать английский. 
+                                Вы освоите алфавит, базовые фразы для повседневного общения, 
+                                Present Simple и Present Continuous.
+                            </p>
+                            <div style="display: flex; gap: 40px; margin-bottom: 30px; flex-wrap: wrap;">
+                                <div style="text-align: center;">
+                                    <div style="font-family: 'Itim Cyrillic'; font-size: 36px; color: #00D962; font-weight: bold;">12</div>
+                                    <div style="font-family: 'Itim Cyrillic'; color: #1D9200;">занятий</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-family: 'Itim Cyrillic'; font-size: 36px; color: #00D962; font-weight: bold;">24</div>
+                                    <div style="font-family: 'Itim Cyrillic'; color: #1D9200;">часа</div>
+                                </div>
+                                <div style="text-align: center;">
+                                    <div style="font-family: 'Itim Cyrillic'; font-size: 36px; color: #00D962; font-weight: bold;">5 000 ₽</div>
+                                    <div style="font-family: 'Itim Cyrillic'; color: #1D9200;">стоимость</div>
+                                </div>
+                            </div>
+                            <button class="infoBlockButton" style="width: 300px; height: 70px; font-size: 28px;"
+                                    onmouseover="this.style.background='#1D9200'; this.style.color='white';"
+                                    onmouseout="this.style.background='#E9FFF1'; this.style.color='#00D962';">
+                                Записаться на курс
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Content -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 40px;">
+                    
+                    <!-- Modules -->
+                    <div class="infoBlock" style="margin-top: 0; height: auto; display: block; padding: 30px;">
+                        <h2 style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 32px; margin-top: 0;">Программа курса</h2>
+                        
+                        <div style="margin-bottom: 15px; padding: 20px; background: #F5FFF7; border-radius: 20px; cursor: pointer; transition: all 0.2s;"
+                             onmouseover="this.style.background='#E9FFF1'; this.style.transform='translateX(5px)';"
+                             onmouseout="this.style.background='#F5FFF7'; this.style.transform='translateX(0)';">
+                            <h3 style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0 0 10px 0; font-size: 22px;">Модуль 1: Алфавит и произношение</h3>
+                            <p style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0; font-size: 16px;">Знакомство с английским алфавитом, базовые звуки, приветствия</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px; padding: 20px; background: #F5FFF7; border-radius: 20px; cursor: pointer; transition: all 0.2s;"
+                             onmouseover="this.style.background='#E9FFF1'; this.style.transform='translateX(5px)';"
+                             onmouseout="this.style.background='#F5FFF7'; this.style.transform='translateX(0)';">
+                            <h3 style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0 0 10px 0; font-size: 22px;">Модуль 2: Present Simple</h3>
+                            <p style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0; font-size: 16px;">Настоящее простое время, глагол to be, распорядок дня</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 15px; padding: 20px; background: #F5FFF7; border-radius: 20px; cursor: pointer; transition: all 0.2s;"
+                             onmouseover="this.style.background='#E9FFF1'; this.style.transform='translateX(5px)';"
+                             onmouseout="this.style.background='#F5FFF7'; this.style.transform='translateX(0)';">
+                            <h3 style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0 0 10px 0; font-size: 22px;">Модуль 3: Личная информация</h3>
+                            <p style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0; font-size: 16px;">Представление себя, семья, профессии, страны</p>
+                        </div>
+                        
+                        <div style="padding: 20px; background: #F5FFF7; border-radius: 20px; cursor: pointer; transition: all 0.2s;"
+                             onmouseover="this.style.background='#E9FFF1'; this.style.transform='translateX(5px)';"
+                             onmouseout="this.style.background='#F5FFF7'; this.style.transform='translateX(0)';">
+                            <h3 style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0 0 10px 0; font-size: 22px;">Модуль 4: Present Continuous</h3>
+                            <p style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0; font-size: 16px;">Настоящее продолженное время, действия в момент речи</p>
+                        </div>
+                    </div>
+
+                    <!-- Teacher Info -->
+                    <div class="infoBlock" style="margin-top: 0; height: auto; display: block; padding: 30px;">
+                        <h2 style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 32px; margin-top: 0;">Преподаватель</h2>
+                        <div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+                            <div style="width: 100px; height: 100px; border-radius: 50%; background: linear-gradient(135deg, #E9FFF1, #98FFB3); display: flex; align-items: center; justify-content: center;">
+                                <span style="font-family: 'Itim Cyrillic'; font-size: 48px;">👤</span>
+                            </div>
+                            <div>
+                                <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 24px; font-weight: bold;">Анна Петрова</div>
+                                <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 16px;">Стаж 8 лет • CELTA certified</div>
+                            </div>
+                        </div>
+                        <p style="font-family: 'Itim Cyrillic'; color: #1D9200; line-height: 1.6; font-size: 16px;">
+                            Специализация — обучение начинающих. Помогла более 500 студентам 
+                            начать говорить на английском с нуля. Использует коммуникативную методику.
+                        </p>
+                        <div style="margin-top: 20px;">
+                            <div style="font-family: 'Itim Cyrillic'; color: #1D9200; margin-bottom: 10px; font-size: 18px;">
+                                <strong>Расписание групп:</strong>
+                            </div>
+                            <div style="padding: 15px; background: #F5FFF7; border-radius: 15px; margin-bottom: 10px;">
+                                <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 16px;">Утренняя группа: Пн, Ср, Пт — 10:00</div>
+                            </div>
+                            <div style="padding: 15px; background: #F5FFF7; border-radius: 15px;">
+                                <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 16px;">Вечерняя группа: Вт, Чт — 19:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviews -->
+                <div class="infoBlock" style="margin-top: 40px; height: auto; display: block; padding: 30px;">
+                    <h2 style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 32px; margin-top: 0;">Отзывы</h2>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">
+                        <div style="padding: 20px; background: #F5FFF7; border-radius: 20px;">
+                            <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Мария К.</div>
+                            <div style="color: #FFD700; margin-bottom: 10px; font-size: 20px;">★★★★★</div>
+                            <p style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0; font-size: 16px;">Отличный курс! За 2 месяца научилась базовым диалогам.</p>
+                        </div>
+                        <div style="padding: 20px; background: #F5FFF7; border-radius: 20px;">
+                            <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-weight: bold; margin-bottom: 10px; font-size: 18px;">Иван С.</div>
+                            <div style="color: #FFD700; margin-bottom: 10px; font-size: 20px;">★★★★★</div>
+                            <p style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0; font-size: 16px;">Анна — замечательный преподаватель. Всё понятно объясняет.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="assets/images/Icons/logo.png" alt="logo">
+                </div>
+                <p class="footer-text">Современные образовательные программы и курсы для вашего развития.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">Вопросы</a></li>
+                    <li><a href="#">Связаться</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p class="footer-text">Email: info@interspeak.ru</p>
+                <p class="footer-text">Телефон: +7 (999) 000-00-00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InterSpeak. Все права защищены.</p>
+        </div>
+    </footer>
+    <section class="popup visibleFalse" id="regPopup">
+      <div class="popupShadow">
+      <section class="popupAuthReg">
+        <button class="popupCloseButton" id="registrationCloseBtn">Закрыть</button>
+        <div class="authRegSelection">
+          <button class="authRegSelectionButton" id="registrationSwitchBtn" disabled >Регистрация</button>
+          <button class="authRegSelectionButton" id="authorizationSwitchBtn">Вход</button>
+        </div>
+        <div class="signSelection">
+          <!-- Regisration block -->
+          <form action="" class="registrationForm" id="registrationFormBlock">
+            <div class="regFormSect" id="registrationNameFormField">
+              <label for="registrationNameFormField" class="formFieldLabel">Имя</label>
+              <input type="text" class="formField">
+              <label for="registrationNameFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSect" id="registrationEmailFormField">
+              <label for="registrationEmailFormField" class="formFieldLabel">Email</label>
+              <input type="text" class="formField">
+              <label for="registrationEmailFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSect" id="registrationPasswordFormField">
+              <label for="registrationPasswordFormField" class="formFieldLabel">Пароль</label>
+              <input type="text" class="formField">
+              <label for="registrationPasswordFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSect" id="registrationConfPassFormField">
+              <label for="registrationConfPassFormField" class="formFieldLabel">Подтвердите пароль</label>
+              <input type="text" class="formField">
+              <label for="registrationConfPassFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSectHorizontal">
+              <div class="regFormSect">
+                <label for="formBirthDateField" class="formFieldLabel">fsf</label>
+                <input type="date" id="formBirthDateField" style="width: 140px; height: 30px; background: #F5FFF7;">
+              </div>
+
+              <div id="formGenderSelect" class="regFormSect">
+                <label for="genderSelectFields" class="formFieldLabel">ваш пол</label>
+                <div style="display: flex;" di="genderSelectFields">
+                  <button class="genderSelectButton">
+                    <img src="../assets/images/Icons/maleIcon.png" alt="maleIcon">
+                  </button>
+                  <button class="genderSelectButton">
+                    <img src="../assets/images/Icons/femIcon.png" alt="femaleIcon">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="regFormSectHorizontal">
+                <div style="display: flex; flex-direction: column;">
+                  <label for="regLevelSelect" id="regLevelLable" style="color: #1D9200;">Ваш уровень:</label>
+                  <label for="regLevelLable" id="regLevelTip" class="regLowerText">
+                    <link rel="stylesheet" href="">Не знаете ваш уровень?
+                </label>
+              </div>
+              <select id="regLevelSelect" class="levelSelection">
+                  <option value="0"></option>
+                  <option value="">A1</option>
+                  <option value="">A2</option>
+                  <option value="">B1</option>
+                  <option value="">B2</option>
+                  <option value="">C1</option>
+                  <option value="">C2</option>
+              </select>
+            </div>
+            <div id="formAgreementBlock">
+              <div class="formAgreementWrap">
+                <input type="checkbox" class="formAgreement"><span class="formAgreementText">ознакомлен с пользовательским соглашением</span>
+              </div>
+              <div class="formAgreementWrap">
+                <input type="checkbox" class="formAgreement"><span class="formAgreementText">Соглашение</span>
+              </div>
+            </div>
+            <button class="authRegButton">Зарегистрироваться</button>
+            <link rel="stylesheet" href=""><span class="regLowerText">Уже есть аккаунт?</span>
+          </form>
+          <!-- Authorization block -->
+          <form action="" class="registrationForm visibleFalse" id="authorizationFormBlock">
+            <div style="margin-top: 100px;">
+             <div class="regFormSect">
+              <label for="registrationNameFormField" class="formFieldLabel">Логин</label>
+              <input type="text" class="formField" id="registrationNameFormField">
+              <label for="registrationNameFormField" class="formFieldError">имя уже используется</label>
+            </div>
+            <div class="regFormSect">
+              <label for="registrationPassFormField" class="formFieldLabel">Пароль</label>
+              <input type="text" class="formField" id="registrationPassFormField">
+              <label for="registrationPassFormField" class="formFieldError">err</label>
+            </div>
+            </div>
+            <button class="authRegButton" style="margin-top: 100px ;">Войти</button>
+          </form>
+        </div>
+      </section>
+      </div>
+     </section>
+</body>
+<script src="../assets/js/main.js"></script>
+</html>

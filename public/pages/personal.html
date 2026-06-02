@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Личный кабинет — InterSpeak</title>
+</head>
+<body>
+    <div class="background-container">
+        <section class="bg-section bg-classroom" style="min-height: 100vh; height: auto;">
+            <header>
+                <nav>
+                    <div style="display: flex; align-items: center; margin-top: 10px;">
+                        <img src="../assets/images/Icons/logo.png" alt="Logo" style="margin-right: 15px; margin-left: 15px;">
+                        <div class="headerTitle">InterSpeak English school</div>
+                    </div>
+                    <div class="headerButtonRow">
+                        <button class="headerBtn" onclick="location.href='index.html'">Главная</button>
+                        <button class="headerBtn" onclick="location.href='catalog.html'">Каталог</button>
+                        <button class="headerBtn" style="background: #E9FFF1;">Мой кабинет</button>
+                        <button class="headerBtn">Выйти</button>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-right: 2vh; gap: 10px;">
+                        <img src="../assets/images/Icons/logo.png" alt="avatar" style="width: 50px; height: 50px; border-radius: 50%;">
+                        <span style="font-family: 'Itim Cyrillic'; color: #1D9200;">Иван И.</span>
+                    </div>
+                </nav>
+            </header>
+
+            <main style="padding-top: 140px; padding-bottom: 60px; max-width: 1400px; margin: 0 auto;">
+                
+                <h1 style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 48px; text-align: center; margin-bottom: 40px;">
+                    Личный кабинет
+                </h1>
+
+                <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 40px;">
+                    
+                    <!-- Sidebar -->
+                    <div class="infoBlock" style="margin-top: 0; height: auto; display: block; padding: 30px;">
+                        <div style="text-align: center; margin-bottom: 30px;">
+                            <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #E9FFF1, #98FFB3); margin: 0 auto 15px; display: flex; align-items: center; justify-content: center;">
+                                <span style="font-size: 60px;">👤</span>
+                            </div>
+                            <h2 style="font-family: 'Itim Cyrillic'; color: #1D9200; margin: 0;">Иван Иванов</h2>
+                            <p style="font-family: 'Itim Cyrillic'; color: #00D962; margin: 5px 0;">Ученик • A1</p>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 14px; margin-bottom: 5px;">Email</div>
+                            <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 18px;">ivan@example.com</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 14px; margin-bottom: 5px;">Группа</div>
+                            <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 18px;">A1-Утро-01</div>
+                        </div>
+                        
+                        <div style="margin-bottom: 20px;">
+                            <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 14px; margin-bottom: 5px;">Преподаватель</div>
+                            <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 18px;">Анна Петрова</div>
+                        </div>
+                        
+                        <button class="cardButton" style="width: 100%; margin-left: 0;">Редактировать профиль</button>
+                    </div>
+
+                    <!-- Main Content -->
+                    <div>
+                        <!-- Progress -->
+                        <div class="infoBlock" style="margin-top: 0; height: auto; display: block; padding: 30px; margin-bottom: 40px;">
+                            <h2 style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 28px; margin-top: 0;">Прогресс курса</h2>
+                            <div style="background: #F5FFF7; border-radius: 20px; padding: 20px; margin-bottom: 15px;">
+                                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                    <span style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 18px;">Основы английского (A1)</span>
+                                    <span style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 18px; font-weight: bold;">65%</span>
+                                </div>
+                                <div style="width: 100%; height: 20px; background: #E9FFF1; border-radius: 10px; overflow: hidden;">
+                                    <div style="width: 65%; height: 100%; background: linear-gradient(90deg, #1D9200, #00D962); border-radius: 10px;"></div>
+                                </div>
+                            </div>
+                            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; text-align: center;">
+                                <div style="padding: 15px; background: #F5FFF7; border-radius: 15px;">
+                                    <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 28px; font-weight: bold;">8</div>
+                                    <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 14px;">Занятий пройдено</div>
+                                </div>
+                                <div style="padding: 15px; background: #F5FFF7; border-radius: 15px;">
+                                    <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 28px; font-weight: bold;">4</div>
+                                    <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 14px;">Осталось</div>
+                                </div>
+                                <div style="padding: 15px; background: #F5FFF7; border-radius: 15px;">
+                                    <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 28px; font-weight: bold;">12</div>
+                                    <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 14px;">Заданий выполнено</div>
+                                </div>
+                                <div style="padding: 15px; background: #F5FFF7; border-radius: 15px;">
+                                    <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 28px; font-weight: bold;">85</div>
+                                    <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 14px;">Средний балл</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Schedule -->
+                        <div class="infoBlock" style="margin-top: 0; height: auto; display: block; padding: 30px; margin-bottom: 40px;">
+                            <h2 style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 28px; margin-top: 0;">Расписание</h2>
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <div style="padding: 20px; background: #F5FFF7; border-radius: 20px; display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 20px; font-weight: bold;">Понедельник, 2 июня</div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 16px;">10:00 — 11:30 • Модуль 3: Личная информация</div>
+                                    </div>
+                                    <button class="cardButton" style="margin: 0; width: 150px;">Войти</button>
+                                </div>
+                                <div style="padding: 20px; background: #F5FFF7; border-radius: 20px; display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 20px; font-weight: bold;">Среда, 4 июня</div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 16px;">10:00 — 11:30 • Модуль 3: Практика</div>
+                                    </div>
+                                    <button class="cardButton" style="margin: 0; width: 150px;">Войти</button>
+                                </div>
+                                <div style="padding: 20px; background: #F5FFF7; border-radius: 20px; display: flex; justify-content: space-between; align-items: center; opacity: 0.6;">
+                                    <div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 20px; font-weight: bold;">Пятница, 30 мая</div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 16px;">10:00 — 11:30 • Модуль 2: Present Simple</div>
+                                    </div>
+                                    <span style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 16px;">Пройдено</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Assignments -->
+                        <div class="infoBlock" style="margin-top: 0; height: auto; display: block; padding: 30px;">
+                            <h2 style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 28px; margin-top: 0;">Задания</h2>
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <div style="padding: 20px; background: #F5FFF7; border-radius: 20px; display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 18px; font-weight: bold;">Упражнение: Present Simple</div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 14px;">До: 5 июня</div>
+                                    </div>
+                                    <span style="padding: 8px 16px; background: #FFD700; color: #1D9200; border-radius: 10px; font-family: 'Itim Cyrillic'; font-size: 14px;">В процессе</span>
+                                </div>
+                                <div style="padding: 20px; background: #F5FFF7; border-radius: 20px; display: flex; justify-content: space-between; align-items: center;">
+                                    <div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #1D9200; font-size: 18px; font-weight: bold;">Диалог: Знакомство</div>
+                                        <div style="font-family: 'Itim Cyrillic'; color: #00D962; font-size: 14px;">Проверено 28 мая</div>
+                                    </div>
+                                    <span style="padding: 8px 16px; background: #00D962; color: white; border-radius: 10px; font-family: 'Itim Cyrillic'; font-size: 14px;">9/10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="../assets/images/Icons/logo.png" alt="logo">
+                </div>
+                <p class="footer-text">Современные образовательные программы и курсы для вашего развития.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">Вопросы</a></li>
+                    <li><a href="#">Связаться</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p class="footer-text">Email: info@interspeak.ru</p>
+                <p class="footer-text">Телефон: +7 (999) 000-00-00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InterSpeak. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Каталог курсов — InterSpeak</title>
+</head>
+<body>
+    <div class="background-container">
+        <section class="bg-section bg-classroom">
+            <header>
+                <nav>
+                    <div class="headerWrap">
+                        <img src="../assets/images/Icons/logo.png" alt="Logo" style="margin-right: 15px; margin-left: 15px;">
+                        <div class="headerTitle">InterSpeak English school</div>
+                    </div>
+                    <div class="headerButtonRow">
+                        <button class="headerBtn">Отзывы</button>
+                        <button class="headerBtn" style="background: #E9FFF1;">Программы</button>
+                        <button class="headerBtn">Вопросы</button>
+                        <button class="headerBtn">О нас</button>
+                    </div>
+                    <button class="headerBtn" style="margin-right: 2vh;" id="mainPageRegBtn">Регистрация/вход</button>
+                </nav>
+            </header>
+            <main style="padding-top: 140px; padding-bottom: 60px;">
+                <div style="font-family: 'Itim Cyrillic'; color: #1D9200; margin-bottom: 30px; font-size: 18px;">
+                    <a href="index.html" style="color: #1D9200; text-decoration: none;">Главная</a> / 
+                    <span style="color: #44ff98;">Программы</span>
+                </div>
+                <h1 style="font-family: 'Itim Cyrillic'; color: #2feb00; font-size: 48px; text-align: center; margin-bottom: 40px;">
+                    Каталог курсов
+                </h1>
+                <!-- Filter Bar -->
+                <div class="catalogLevelFilter">
+                    <button class="catalogFilterButton" style="background: #1D9200; color: white;">Все</button>
+                    <button class="catalogFilterButton">A1 — Beginner</button>
+                    <button class="catalogFilterButton">A2 — Elementary</button>
+                    <button class="catalogFilterButton">B1 — Intermediate</button>
+                    <button class="catalogFilterButton">B2 — Upper-Intermediate</button>
+                    <button class="catalogFilterButton">C1 — Advanced</button>
+                    <button class="catalogFilterButton">C1 — Proficiency English</button>
+                </div>
+                <!-- Course Cards Grid -->
+                <div class="cardsList" style="flex-wrap: wrap; justify-content: center; gap: 40px; margin: 20px;">
+                    <!-- Course Card A1 -->
+                    <div class="levelCard" style="cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;">
+                        <div style="width: 100%; height: 180px; background: linear-gradient(135deg, #E9FFF1, #98FFB3); border-radius: 58px 58px 0 0; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-family: 'Itim Cyrillic'; font-size: 64px; color: #1D9200;">A1</span>
+                        </div>
+                        <h2 class="cardTitle" style="margin-top: 20px; font-size: 28px;">Основы английского</h2>
+                        <p class="cardText" style="padding: 0 30px; font-size: 18px;">
+                            Алфавит, базовые фразы, Present Simple. Для тех, кто начинает с нуля.
+                        </p>
+                        <div style="margin-top: auto; padding: 20px; text-align: center;">
+                            <div style="color: #00D962; font-size: 28px; font-weight: bold;">5 000 ₽</div>
+                            <div style="color: #1D9200; font-size: 16px;">12 занятий • 24 часа</div>
+                        </div>
+                        <button class="cardButton" style="margin-bottom: 30px;" onclick="location.href='details.html'">Подробнее</button>
+                    </div>
+                    <!-- Course card A2 -->
+                    <div class="levelCard" style="cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;">
+                        <div style="width: 100%; height: 180px; background: linear-gradient(135deg, #E0F7FA, #80DEEA); border-radius: 58px 58px 0 0; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-family: 'Itim Cyrillic'; font-size: 64px; color: #00838F;">A2</span>
+                        </div>
+                        <h2 class="cardTitle" style="margin-top: 20px; font-size: 28px;">Elementary English</h2>
+                        <p class="cardText" style="padding: 0 30px; font-size: 18px;">
+                            Past Simple, Future, расширенный словарь. Продолжение базового курса.
+                        </p>
+                        <div style="margin-top: auto; padding: 20px; text-align: center;">
+                            <div style="color: #00D962; font-size: 28px; font-weight: bold;">6 500 ₽</div>
+                            <div style="color: #1D9200; font-size: 16px;">16 занятий • 32 часа</div>
+                        </div>
+                        <button class="cardButton" style="margin-bottom: 30px;">Подробнее</button>
+                    </div>
+                    <!-- Course card B1 -->
+                    <div class="levelCard" style="cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;" onclick="location.href='card-detail.html?id=3'">
+                        <div style="width: 100%; height: 180px; background: linear-gradient(135deg, #FFF3E0, #FFCC80); border-radius: 58px 58px 0 0; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-family: 'Itim Cyrillic'; font-size: 64px; color: #EF6C00;">B1</span>
+                        </div>
+                        <h2 class="cardTitle" style="margin-top: 20px; font-size: 28px;">Intermediate Level</h2>
+                        <p class="cardText" style="padding: 0 30px; font-size: 18px;">
+                            Сложные времена, условные предложения, разговорная практика.
+                        </p>
+                        <div style="margin-top: auto; padding: 20px; text-align: center;">
+                            <div style="color: #00D962; font-size: 28px; font-weight: bold;">8 000 ₽</div>
+                            <div style="color: #1D9200; font-size: 16px;">20 занятий • 40 часов</div>
+                        </div>
+                        <button class="cardButton" style="margin-bottom: 30px;">Подробнее</button>
+                    </div>
+                    <!-- Course card B2 -->
+                    <div class="levelCard" style="cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;" onclick="location.href='card-detail.html?id=4'">
+                        <div style="width: 100%; height: 180px; background: linear-gradient(135deg, #F3E5F5, #CE93D8); border-radius: 58px 58px 0 0; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-family: 'Itim Cyrillic'; font-size: 64px; color: #7B1FA2;">B2</span>
+                        </div>
+                        <h2 class="cardTitle" style="margin-top: 20px; font-size: 28px;">Upper-Intermediate</h2>
+                        <p class="cardText" style="padding: 0 30px; font-size: 18px;">
+                            Идиомы, фразовые глаголы, деловой английский. Подготовка к C1.
+                        </p>
+                        <div style="margin-top: auto; padding: 20px; text-align: center;">
+                            <div style="color: #00D962; font-size: 28px; font-weight: bold;">9 500 ₽</div>
+                            <div style="color: #1D9200; font-size: 16px;">20 занятий • 40 часов</div>
+                        </div>
+                        <button class="cardButton" style="margin-bottom: 30px;">Подробнее</button>
+                    </div>
+                    <!-- Course card C1 -->
+                    <div class="levelCard" style="cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;" onclick="location.href='card-detail.html?id=5'">
+                        <div style="width: 100%; height: 180px; background: linear-gradient(135deg, #E8F5E9, #66BB6A); border-radius: 58px 58px 0 0; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-family: 'Itim Cyrillic'; font-size: 64px; color: #2E7D32;">C1</span>
+                        </div>
+                        <h2 class="cardTitle" style="margin-top: 20px; font-size: 28px;">Advanced English</h2>
+                        <p class="cardText" style="padding: 0 30px; font-size: 18px;">
+                            Свободное владение языком. Академический английский, сложные тексты.
+                        </p>
+                        <div style="margin-top: auto; padding: 20px; text-align: center;">
+                            <div style="color: #00D962; font-size: 28px; font-weight: bold;">12 000 ₽</div>
+                            <div style="color: #1D9200; font-size: 16px;">24 занятия • 48 часов</div>
+                        </div>
+                        <button class="cardButton" style="margin-bottom: 30px;">Подробнее</button>
+                    </div>
+                    <!-- Course card C2 -->
+                    <div class="levelCard" style="cursor: pointer; transition: transform 0.3s, box-shadow 0.3s;" onclick="location.href='card-detail.html?id=6'">
+                        <div style="width: 100%; height: 180px; background: linear-gradient(135deg, #FFEBEE, #EF5350); border-radius: 58px 58px 0 0; display: flex; align-items: center; justify-content: center;">
+                            <span style="font-family: 'Itim Cyrillic'; font-size: 64px; color: #C62828;">C2</span>
+                        </div>
+                        <h2 class="cardTitle" style="margin-top: 20px; font-size: 28px;">Proficiency English</h2>
+                        <p class="cardText" style="padding: 0 30px; font-size: 18px;">
+                        Уровень владения языком как носитель. Академические тексты, дипломатия, научные статьи.
+                        </p>
+                        <div style="margin-top: auto; padding: 20px; text-align: center;">
+                            <div style="color: #00D962; font-size: 28px; font-weight: bold;">15 000 ₽</div>
+                            <div style="color: #1D9200; font-size: 16px;">30 занятий • 60 часов</div>
+                        </div>
+                        <button class="cardButton" style="margin-bottom: 30px;">Подробнее</button>
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="assets/images/Icons/logo.png" alt="logo">
+                </div>
+                <p class="footer-text">Современные образовательные программы и курсы для вашего развития.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="#">Вопросы</a></li>
+                    <li><a href="#">Связаться</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакты</h4>
+                <p class="footer-text">Email: info@interspeak.ru</p>
+                <p class="footer-text">Телефон: +7 (999) 000-00-00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 InterSpeak. Все права защищены.</p>
+        </div>
+    </footer>
+    <section class="popup visibleFalse" id="regPopup">
+      <div class="popupShadow">
+      <section class="popupAuthReg">
+        <button class="popupCloseButton" id="registrationCloseBtn">Закрыть</button>
+        <div class="authRegSelection">
+          <button class="authRegSelectionButton" id="registrationSwitchBtn" disabled >Регистрация</button>
+          <button class="authRegSelectionButton" id="authorizationSwitchBtn">Вход</button>
+        </div>
+        <div class="signSelection">
+          <!-- Regisration block -->
+          <form action="" class="registrationForm" id="registrationFormBlock">
+            <div class="regFormSect" id="registrationNameFormField">
+              <label for="registrationNameFormField" class="formFieldLabel">Имя</label>
+              <input type="text" class="formField">
+              <label for="registrationNameFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSect" id="registrationEmailFormField">
+              <label for="registrationEmailFormField" class="formFieldLabel">Email</label>
+              <input type="text" class="formField">
+              <label for="registrationEmailFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSect" id="registrationPasswordFormField">
+              <label for="registrationPasswordFormField" class="formFieldLabel">Пароль</label>
+              <input type="text" class="formField">
+              <label for="registrationPasswordFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSect" id="registrationConfPassFormField">
+              <label for="registrationConfPassFormField" class="formFieldLabel">Подтвердите пароль</label>
+              <input type="text" class="formField">
+              <label for="registrationConfPassFormField" class="formFieldError"></label>
+            </div>
+            <div class="regFormSectHorizontal">
+              <div class="regFormSect">
+                <label for="formBirthDateField" class="formFieldLabel">fsf</label>
+                <input type="date" id="formBirthDateField" style="width: 140px; height: 30px; background: #F5FFF7;">
+              </div>
+
+              <div id="formGenderSelect" class="regFormSect">
+                <label for="genderSelectFields" class="formFieldLabel">ваш пол</label>
+                <div style="display: flex;" di="genderSelectFields">
+                  <button class="genderSelectButton">
+                    <img src="../assets/images/Icons/maleIcon.png" alt="maleIcon">
+                  </button>
+                  <button class="genderSelectButton">
+                    <img src="../assets/images/Icons/femIcon.png" alt="femaleIcon">
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="regFormSectHorizontal">
+                <div style="display: flex; flex-direction: column;">
+                  <label for="regLevelSelect" id="regLevelLable" style="color: #1D9200;">Ваш уровень:</label>
+                  <label for="regLevelLable" id="regLevelTip" class="regLowerText">
+                    <link rel="stylesheet" href="">Не знаете ваш уровень?
+                </label>
+              </div>
+              <select id="regLevelSelect" class="levelSelection">
+                  <option value="0"></option>
+                  <option value="">A1</option>
+                  <option value="">A2</option>
+                  <option value="">B1</option>
+                  <option value="">B2</option>
+                  <option value="">C1</option>
+                  <option value="">C2</option>
+              </select>
+            </div>
+            <div id="formAgreementBlock">
+              <div class="formAgreementWrap">
+                <input type="checkbox" class="formAgreement"><span class="formAgreementText">ознакомлен с пользовательским соглашением</span>
+              </div>
+              <div class="formAgreementWrap">
+                <input type="checkbox" class="formAgreement"><span class="formAgreementText">Соглашение</span>
+              </div>
+            </div>
+            <button class="authRegButton">Зарегистрироваться</button>
+            <link rel="stylesheet" href=""><span class="regLowerText">Уже есть аккаунт?</span>
+          </form>
+          <!-- Authorization block -->
+          <form action="" class="registrationForm visibleFalse" id="authorizationFormBlock">
+            <div style="margin-top: 100px;">
+             <div class="regFormSect">
+              <label for="registrationNameFormField" class="formFieldLabel">Логин</label>
+              <input type="text" class="formField" id="registrationNameFormField">
+              <label for="registrationNameFormField" class="formFieldError">имя уже используется</label>
+            </div>
+            <div class="regFormSect">
+              <label for="registrationPassFormField" class="formFieldLabel">Пароль</label>
+              <input type="text" class="formField" id="registrationPassFormField">
+              <label for="registrationPassFormField" class="formFieldError">err</label>
+            </div>
+            </div>
+            <button class="authRegButton" style="margin-top: 100px ;">Войти</button>
+          </form>
+        </div>
+      </section>
+      </div>
+     </section>
+</body>
+<script src="../assets/js/main.js"></script>
+</html>
